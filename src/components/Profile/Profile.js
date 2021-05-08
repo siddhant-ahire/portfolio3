@@ -1,6 +1,7 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
 import profileImg from '../../assets/images/profile.jpg'
+import CustomTimeline from '../Timeline/Timeline'
 import './profile.css'
 
 
@@ -15,7 +16,7 @@ const Profile = () => {
                 <img src={profileImg} alt="siddhant ahire image" />
             </figure>
             <div className="profile_information">
-                Insert Timeline
+                <CustomTimeline/>
                 <br />
                 <button>Button</button>
             </div>

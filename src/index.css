@@ -7,6 +7,9 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #333;
+  overflow-x: hidden;
+  position: relative;
+  background: url(./assets/images/bg.png) #fafafa;
 }
 
 code {
