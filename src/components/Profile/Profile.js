@@ -4,9 +4,10 @@ import profileImg from '../../assets/images/profile.jpg'
 import CustomTimeline, { CustomTimelineSeparator } from '../Timeline/Timeline'
 import resumeData from '../../utils/resumeData'
 import './profile.css'
-import { PersonOutlineOutlined } from '@material-ui/icons'
+import { GetApp, PersonOutlineOutlined } from '@material-ui/icons'
 import TimelineItem from '@material-ui/lab/TimelineItem'
 import TimelineContent from '@material-ui/lab/TimelineContent'
+import Button from '../Button/Button'
 
 const CustomTimelineItem = ({ title, text, link }) => (
     <TimelineItem>
@@ -44,11 +45,11 @@ const Profile = () => {
                 <CustomTimelineItem title="Email" text={resumeData.email}/>
                 <CustomTimelineItem title="Dob" style={{fontSize:5}} text={resumeData.birthday}/>
                 {Object.keys(resumeData.socials).map((key)=>(
-                    <CustomTimelineItem title={key} text={resumeData.socials[key].text} link={resumeData.socials[key].link}/>
+                    <CustomTimelineItem title={key} key={key} text={resumeData.socials[key].text} link={resumeData.socials[key].link}/>
                 ))}
                 </CustomTimeline>
                 <br />
-                <button>Button</button>
+                <Button text={'Download Cv'} icon={<GetApp/>}/>
             </div>
 
         </div>

@@ -59,3 +59,8 @@
 .timelineItem_text > span{
     color: #000;
 }
+
+.profile .site-btn {
+    margin: 18px auto 30px;
+    display: block;
+}
