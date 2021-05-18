@@ -31,6 +31,6 @@
 }
 
 .site-btn.icon i > .MuiSvgIcon-root {
-    padding:5px;
-    font-size: 16px !important;
+    padding:0px 3px 5px 3px;
+    font-size: 25px !important;
 }
