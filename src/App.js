@@ -17,14 +17,16 @@ function App() {
         <Grid item xs style={{background:''}}>
           <Router>
           <Header />
+          <div className="main-content container_shadow">
             <Switch>
               <Route exact path="/">
-                <Portfolio />
-              </Route>
-              <Route exact path="/resume">
                 <Resume />
               </Route>
+              <Route exact path="/portfolio">
+                <Portfolio />
+              </Route>
             </Switch>
+          </div>
           </Router>
           <Footer />
         </Grid>

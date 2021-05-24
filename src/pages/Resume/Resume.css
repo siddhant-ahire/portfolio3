@@ -1,0 +1,6 @@
+.about_text {
+    color: darkslategray;
+    font:smaller;
+    line-height: 22px !important;
+    white-space: pre-line !important;
+}
